@@ -1,0 +1,1002 @@
+
+<!doctype html><html lang="en" data-unit="km" data-config="{&quot;mtk_static_base_url&quot;: &quot;https://static-cdn.maptoolkit.net/&quot;, &quot;lang&quot;: &quot;en&quot;, &quot;mtk_resource_id_ways&quot;: &quot;outdoorish_bikemap_paths&quot;, &quot;site_domain&quot;: &quot;www.bikemap.net&quot;, &quot;site_name&quot;: &quot;Bikemap&quot;, &quot;grounds_all&quot;: &quot;All&quot;, &quot;mtk_resource_id&quot;: &quot;outdoorish_bikemap_routes&quot;, &quot;mtk_cdn_static_base_url&quot;: &quot;https://static-cdn.maptoolkit.net/&quot;, &quot;site_url&quot;: &quot;https://www.bikemap.net&quot;, &quot;unit&quot;: &quot;metric&quot;, &quot;mtk_api_key&quot;: &quot;a43b336be8b817ce89f61fdabf73499c&quot;, &quot;mtk_host_url&quot;: &quot;https://maptoolkit.net/&quot;, &quot;heatmap_layer_slug&quot;: &quot;bikemap&quot;, &quot;ways_layer_slug&quot;: &quot;osm_cycling_routes&quot;, &quot;site_slug&quot;: &quot;bikemap&quot;, &quot;ways_layer_name&quot;: &quot;OSM Cycling Routes&quot;, &quot;mtk_static_url&quot;: &quot;https://static.maptoolkit.net/custom/&quot;}" data-mtk-init-config="{&quot;mapquestApiKey&quot;: &quot;SlvkWjfkJylG0QmkOiYxxAmcn9dz154s&quot;, &quot;apiKey&quot;: &quot;a43b336be8b817ce89f61fdabf73499c&quot;, &quot;language&quot;: &quot;en&quot;, &quot;unit&quot;: &quot;km&quot;}"><head><!-- Basics --><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwAEUFVSGwAAXFhQDgI="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;c<s;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",w[n]=e,e in f||(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"a29ddca0f7","agent":"","transactionName":"ZABWbEdZDEdUV0cNCV1Kck1bWxZdWlocFglGEVFLG04LUUJHCRYJRhFRZ1BcC0A=","applicationID":"3089293","errorBeacon":"bam.nr-data.net","applicationTime":103}</script><title>Create new route | Bikemap - Your bike routes</title><!-- SEO --><meta name="author" content="Bikemap GmbH" /><meta name="description" content="Bikemap is the world's biggest bike route collection. Find your perfect cycling route, create your own bike trails, and discover the most stunning cycling destinations." /><meta name="keywords" content="" /><!-- Mobile viewport --><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /><meta name="apple-itunes-app" content="app-id=625759466" /><link rel="alternate" href="android-app://com.toursprung.bikemap/bikemap/home" /><!-- IE Scripts --><!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- CSS --><link href="/static/bikemap-next/css/main.v090.css" rel="stylesheet" type="text/css" /><!-- Favicons --><link rel="apple-touch-icon" sizes="180x180" href="/static/bikemap-next/favicons/apple-icon-180x180.png"><link rel="apple-touch-icon" sizes="152x152" href="/static/bikemap-next/favicons/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="144x144" href="/static/bikemap-next/favicons/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="120x120" href="/static/bikemap-next/favicons/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="114x114" href="/static/bikemap-next/favicons/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="76x76" href="/static/bikemap-next/favicons/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="72x72" href="/static/bikemap-next/favicons/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="60x60" href="/static/bikemap-next/favicons/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="57x57" href="/static/bikemap-next/favicons/apple-icon-57x57.png"><link rel="apple-touch-icon-precomposed" href="/static/bikemap-next/favicons/apple-touch-icon-precomposed.png"><link rel="icon" type="image/png" sizes="192x192" href="/static/bikemap-next/favicons/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="96x96" href="/static/bikemap-next/favicons/favicon-96x96.png"><link rel="icon" type="image/png" sizes="32x32" href="/static/bikemap-next/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/static/bikemap-next/favicons/favicon-16x16.png"><meta name="theme-color" content="#333333"><link rel="manifest" href="/static/bikemap-next/favicons/manifest.json"><link rel="icon" href="/static/bikemap-next/favicons/favicon.ico" /><!--[if IE]><link rel="shortcut icon" href="/static/bikemap-next/favicons/favicon.ico" /><![endif]--><!-- open graph information --><meta property="og:title" content="Bikemap - Your bike routes online" /><meta property="og:description" content="Bikemap is the largest collection of bike routes on the web. Bicycle routes can be mapped in our cycle route planner or uploaded from GPS devices, exported as GPX and KML files and ridden with our mobile apps." /><meta property="og:url" content="https://www.bikemap.net" /><meta property="og:image" content="/static/bikemap-next/img/logo-share.png" /><meta property="og:site_name" content="Bikemap" /><meta property="fb:app_id" content="567014326655840" /><meta property="fb:profile_id" content="6515037646" /><!-- Canonical --><link rel="canonical" href="https://www.bikemap.net/en/route/create/" /><link rel="alternate" hreflang="x-default" href="https://www.bikemap.net/en/route/create/" /><link rel="alternate" hreflang="de" href="https://www.bikemap.net/de/route/create/" /><link rel="alternate" hreflang="en" href="https://www.bikemap.net/en/route/create/" /><link rel="alternate" hreflang="es" href="https://www.bikemap.net/es/route/create/" /><link rel="alternate" hreflang="fr" href="https://www.bikemap.net/fr/route/create/" /><link rel="alternate" hreflang="it" href="https://www.bikemap.net/it/route/create/" /><link rel="alternate" hreflang="pl" href="https://www.bikemap.net/pl/route/create/" /><link rel="alternate" hreflang="cs" href="https://www.bikemap.net/cs/route/create/" /><link rel="alternate" hreflang="nl" href="https://www.bikemap.net/nl/route/create/" /><link rel="alternate" hreflang="hu" href="https://www.bikemap.net/hu/route/create/" /><link rel="alternate" hreflang="ro" href="https://www.bikemap.net/ro/route/create/" /><link rel="alternate" hreflang="sk" href="https://www.bikemap.net/sk/route/create/" /><link rel="alternate" hreflang="sl" href="https://www.bikemap.net/sl/route/create/" /></head><body class="template-route-editor"><script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '567014326655840',
+              xfbml      : true,
+              version    : 'v2.5'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script><!-- Page header --><header class="page-header"><div class="container-fluid container-wa clearfix"><nav class="main-nav row"><div class="col-fixed-175 hidden-xs hidden-sm"><a href="/en/" class="logo" title="Home"><img class="bikemap-logo" src="/static/bikemap-next/img/bikemap-logo.svg" alt="bikemap-logo"/></a></div><div class="col-md-12 col-md-offset-175"><div class="row"><div class="col-xs-2 visible-xs visible-sm"><a href="#mobile-nav" class="button-mobile-menu js-toggle-mobile-nav"><i class="icon icon-navigation-drawer icon-2x"></i></a></div><div class="col-xs-8 visible-xs visible-sm text-center"><a href="/en/" class="logo" title=""><img class="bikemap-logo" src="/static/bikemap-next/img/bikemap-logo.svg" alt="bikemap-logo"/><img class="bikemap-logo-bike" src="/static/bikemap-next/img/bikemap-logo-bikeonly.svg" alt="bikemap-logo-bike" /></a></div><div class="col-md-5 hidden-xs hidden-sm"><ul id="discover-menu" class="list-inline"><li><a href="/en/search/" title="Routes">Routes</a></li><li><a href="/en/routeplanner/" title="Directions">Directions</a></li><li><a href="/en/apps/" title="Apps">Apps</a></li><li class="bm-premium-show hidden"><a href="/en/regional/" title="Regions">Regions</a></li><li class="bm-premium-hide hidden"><a href="/en/premium/" title="Premium">Premium</a></li></ul></div><div class="col-md-7 hidden-xs hidden-sm pull-right text-right"><ul><li id="user_menu_loading"><div class="loading-spinner"></div></li><li class="dropdown dropdown-pull-right"><a class="button button-nav-item js-dropdown-toggle mr-10" href="#" data-toggle="dropdown"><span>Help</span><i class="icon icon-caret-down icon-fade"></i></a><ul class="dropdown-menu"><li class="dropdown-subheading">Suggested Articles</li><li id="plugin-id-84867" ><a id="plugin-id-84868" href="https://help.bikemap.net/hc/en-us/articles/208836445-What-is-Bikemap-">What is Bikemap?</a></li><li id="plugin-id-84869" ><a id="plugin-id-84870" href="https://help.bikemap.net/hc/en-us/articles/208836705-How-can-I-create-plan-draw-a-route-with-the-route-editor-">Create a route</a></li><li id="plugin-id-84871" ><a id="plugin-id-84872" href="https://help.bikemap.net/hc/en-us/articles/208837185-How-do-I-import-routes-from-my-device-into-Bikemap-">Upload a route</a></li><li id="plugin-id-84873" ><a id="plugin-id-84874" href="https://help.bikemap.net/hc/en-us/articles/208925725-Which-map-regions-are-available-for-download-">Offline maps</a></li><li><a href="https://help.bikemap.net/" target="_blank" class="weight-bold">Go to Help Center</a></li><li class="divider hidden bm-premium-show"></li><li class="hidden bm-premium-show"><a id="zendesk-header-activate"><i class="fa fa-life-ring" aria-hidden="true"></i>&nbsp;Send us a message</a></li></ul></li><li id="create_route_button" class="item-new-route dropdown dropdown-pull-right"><a class="button button-solid button-green button-new-route js-dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon icon-add icon-fade mr-5"></i><span class="text">New Route</span><i class="icon icon-caret-down icon-fade"></i></a><ul id="create_route_dropdown" class="dropdown-menu"><li><a href="/en/route/create/"><i class="icon icon-pencil-write" aria-hidden="true"></i>&nbsp;Start with blank route</a></li><li><a href="/en/route/create/?startwithgpx=1"><i class="icon icon-data-upload" aria-hidden="true"></i>&nbsp;Upload GPX/KML file</a></li><li class="divider"></li><li><a href="/en/routeplanner/"><i class="icon icon-directions"></i>&nbsp;Get cycle directions</a></li></ul></li></ul></div><div class="col-xs-2 visible-xs visible-sm text-right"><a href="/en/search/" class="button-mobile-search"><i class="icon icon-search icon-2x"></i></a></div></div></div></nav></div></header><!-- /Page header --><!-- Mobile navigation --><div class="mobile-nav clearfix" id="mobile-nav"><div class="mobile-nav-scroll"><div class="mobile-nav-wrap"><div class="mobile-nav-content"><ul class="mobile-nav-list mb-30"><li id="mobile_user_menu_loading"><div class="loading-spinner"></div></li></ul><ul class="mobile-nav-list"><li><a href="/en/" title="Home">Home</a></li></ul><hr /><ul class="mobile-nav-list"><li><a href="/en/search/" title="Routes">Routes</a></li><li><a href="/en/apps/" title="Apps">Apps</a></li><li class="bm-premium-show hidden"><a href="/en/regional/" title="Regions">Regions</a></li><li class="bm-premium-hide hidden"><a href="/en/premium/" title="Premium">Premium</a></li></ul><hr /><ul class="mobile-nav-list"><li><a href="https://help.bikemap.net/" target="_blank">Go to Help Center</a></li><li class="divider hidden bm-premium-show"></li><li class="hidden bm-premium-show"><a id="zendesk-header-activate"><i class="fa fa-life-ring" aria-hidden="true"></i>&nbsp;Send us a message
+                        </a></li></ul></div></div></div></div><!-- /Mobile navigation --><!-- Modals --><!-- Modal - Log in content --><div aria-hidden="true" class="modal fade" id="log-in" role="dialog" tabindex="-1"><div class="modal-dialog modal-xs"><div class="modal-content"><div class="modal-heading"><a class="modal-close" data-dismiss="modal">&times;</a><h2 class="title-log-in">Log in</h2></div><div class="modal-inner clearfix"><a href="/en/social/login/facebook/?next=/en/route/create/" id="login-with-facebook" 
+                   class="fbconnect ir mb-20 button button-solid button-facebook button-wide"><i class="fa fa-facebook-square mr-5"></i>&nbsp;Log in with Facebook
+                </a><a href="/en/social/login/google-oauth2/?next=/en/route/create/" id="login-with-google"
+                   class="button button-google button-solid button-wide mb-30"><i class="fa fa-google-plus-square mr-5"></i>&nbsp;Log in with Google
+                </a><div class="form-separator"><p>Or log in with your Bikemap username:</p><hr></div><form class="form form-standard" method="post" action="/en/ajax-login/" id="login"><input type='hidden' name='csrfmiddlewaretoken' value='KXkZdTIY7KskLTOXXgcHVLAuas39HwJR' /><input id="id_action" name="action" type="hidden" value="login" /><input id="id_route_id" name="route_id" type="hidden" /><input id="id_next_url" name="next_url" type="hidden" value="/en/route/create/" /><div class="form-group"><div class="row"><div class="col-xs-12"><input class="form-control" id="id_username" maxlength="100" name="username" placeholder="Username" type="text" /></div></div></div><div class="form-group"><div class="row"><div class="col-xs-12"><div class="input-group"><input class="form-control" id="id_password" name="password" placeholder="Password" type="password" /><label class="input-group-addon data-toggle" data-toggle="password" for="id_password"><i
+                                            class="fa fa-eye"></i></label></div><p class="password-help text-right">
+                                    
+                                    
+                                        Forgot your password? <a href="/en/password-reset/">Reset here</a></p></div></div></div><button type="submit" class="button button-solid button-green button-wide mt-20">Log in</button></form></div><div class="modal-footer"><p class="text-lastline">
+                    
+                        No Bikemap account yet? <a href="#sign-up" data-toggle="modal" data-dismiss="modal">Sign up here</a></p></div></div></div></div><!-- /Modal - Log in content --><!-- Modal - Sign up content --><div aria-hidden="true" class="modal fade" id="sign-up" role="dialog" tabindex="-1"><div class="modal-dialog modal-xs"><div class="modal-content"><div class="modal-heading clearfix"><a class="modal-close" data-dismiss="modal">&times;</a><h2 class="modal-title">Sign up for Bikemap</h2><p class="text-lead hidden-xs">It's free and always will be.</p></div><div class="modal-inner clearfix"><a href="/en/social/login/facebook/?next=/en/route/create/" id="register-with-facebook"
+                   class="button button-solid button-facebook button-wide mb-20 fbconnect ir"><i class="fa fa-facebook-square mr-5"></i>&nbsp;Log in with Facebook
+                </a><a href="/en/social/login/google-oauth2/?next=/en/route/create/" id="register-with-google"
+                   class="button button-solid button-google mb-30 button-wide"><i class="fa fa-google-plus-square mr-5"></i>&nbsp;Log in with Google
+                </a><div class="form-separator"><p>Or sign up with your email address:</p><hr></div><form class="form form-standard" method="post" action="/en/ajax-register/" id="register"><input type='hidden' name='csrfmiddlewaretoken' value='KXkZdTIY7KskLTOXXgcHVLAuas39HwJR' /><input id="id_action" name="action" type="hidden" value="register" /><input id="id_route_id" name="route_id" type="hidden" /><input id="id_next_url" name="next_url" type="hidden" value="/en/route/create/" /><div class="form-group"><div class="row"><div class="col-xs-12"><input class="form-control" id="reg_id_email" maxlength="75" name="email" placeholder="E-mail address" type="email" /></div></div></div><div class="form-group"><div class="row"><div class="col-xs-12"><input class="form-control" id="reg_id_usernames" maxlength="100" name="username" placeholder="Username" type="text" /></div></div></div><div class="form-group"><div class="row"><div class="col-xs-12"><div class="input-group"><input class="form-control" id="reg_id_password" name="password" placeholder="Password" type="password" /><label class="input-group-addon data-toggle" data-toggle="password" for="reg_id_password"><i
+                                            class="fa fa-eye"></i></label></div></div></div></div><button type="submit" class="button button-solid button-green button-wide mt-20">Sign up</button><p class="mt"><small>By signing up you agree to the <a href="/en/terms-of-service/" class="terms-service" target="_blank">Terms of Service</a>.</small></p></form></div><div class="modal-footer"><p class="text-lastline">Already a Bikemap user? <a data-toggle="modal" href="#log-in" data-dismiss="modal">Log in here</a></p></div></div></div></div><!-- /Modal - Sign up content --><!-- Modal - Welcome screen --><div aria-hidden="true" class="modal fade" id="welcome" role="dialog" tabindex="-1"><div class="modal-dialog modal-xs"><div class="modal-content"><div class="modal-heading"><a class="modal-close" data-dismiss="modal">&times;</a></div><div class="modal-inner clearfix text-center"><img src="/static/bikemap-next/img/illu-blank-route.svg" alt="Welcome to the route editor" class="img-center" style="width: 30%;"/><h2 class="mb mt-0">Create a route</h2><div id="dropzone-welcome" class="dropzone needsclick mb"><div class="dz-message needsclick">
+                        Drop a GPX/KML file here or click to upload.
+                    </div></div><button id="welcome_upload_gpx" class="button button-blue button-ghost button-wide mb">Upload and import file</button><div class="form-separator"><p>or</p><hr></div><a class="button button-solid button-blue button-small button-wide" data-dismiss="modal">Start with blank route</a></div><div class="modal-footer text-center" style="display:none;"><a href="javascript:void(0)" id="startTour">Take the tour</a></div></div></div></div><!-- /Modal - Welcome screen --><!-- Modals --><!-- Main Content --><!-- Main --><main class="page-main" role="main"><section class="section section-white nopadding"><div class="container-fluid"><div class="row"><div class="col-sm-8 nopadding"><div id="mapwrapper" class="addroute full-height"><div id="map"></div></div><!-- .mapwrapper --></div><div class="col-sm-4 editor-pane"><div class="row editor-content"><div class="col-xs-12"><h3>Create new route</h3><form class="form form-standard" id="routeEditForm"><input id="id_distance" name="distance" type="hidden" /><input id="id_parts" name="parts" type="hidden" /><input id="id_points" name="points" type="hidden" /><input id="id_pois" name="pois" type="hidden" /><input id="id_points_changed" name="points_changed" type="hidden" /><input id="id_creator" name="creator" type="hidden" /><input id="id_copied_from" name="copied_from" type="hidden" /><input id="id_preview_image" name="preview_image" style="display: none;" type="file" /><div class="form-group"><div class="row"><div class="col-xs-12"><p class="group-label">Title image</p><div id="preview_image" class="title-image"><div class="route-title-image-empty"><i class="icon icon-camera icon-3x mt mb"></i><p>Add a title image for your route</p></div><a rel="nofollow" class="route-title-image-upload"><i class="icon icon-camera icon-2x route-title-image-icon" data-toggle="tooltip" data-placement="top" title="Change image" style="display:none;"></i></a><a id="remove_preview_image" class="dropzone-remove-floating-button" data-toggle="tooltip" data-placement="left" title="Remove image"><i class="fa fa-minus"></i></a></div></div></div></div><div class="form-group"><div class="row"><div class="col-xs-12"><p class="group-label">Route title  <span class="asterisk-field">*</span></p><input class="form-control input-route-title" id="id_title" name="title" placeholder="Route title" type="text" /></div></div></div><div class="form-group"><p class="group-label">Description</p><div class="row"><div class="col-xs-12"><div class="django-ckeditor-widget" data-field-id="id_description" style="display: inline-block;"><textarea class="form-control" cols="40" id="id_description" name="description" placeholder="Enter a route description ..." rows="10" type="text" data-processed="0" data-config='{"filebrowserWindowWidth": 940, "toolbar_Basic": [["Source", "-", "Bold", "Italic"]], "removeDialogTabs": "link:upload;link:advanced", "language": "it", "toolbarCanCollapse": false, "toolbar_Full": [["Styles", "Format", "Bold", "Italic", "Underline", "Strike", "SpellChecker", "Undo", "Redo"], ["Link", "Unlink", "Anchor"], ["Image", "Flash", "Table", "HorizontalRule"], ["TextColor", "BGColor"], ["Smiley", "SpecialChar"], ["Source"]], "height": 150, "width": "100%", "filebrowserLinkBrowseUrl": "", "removePlugins": "elementspath", "skin": "moono", "filebrowserWindowHeight": 725, "toolbar": [["Bold", "Italic", "Underline", "-", "NumberedList", "BulletedList", "-", "Link", "Unlink", "-", "PasteFromWord"]]}' data-external-plugin-resources='[]' data-id="id_description" data-type="ckeditortype"></textarea></div></div></div></div><div class="form-group"><p class="group-label">GPX/KML file</p><div class="row"><div class="col-xs-12"><div id="dropzone-gpx" class="dropzone needsclick" style="text-align: center; min-height: initial"><div class="dz-message needsclick">
+                                                    Drop a GPX/KML file here or click to upload.
+                                                </div></div></div></div></div><!-- TODO Write custom multiselect widget --><div class="form-group"><p class="group-label">Surface</p><div class="row" id="id_ground"><div class="col-xs-4"><div class="checkbox checkbox-input"><label for="id_ground_0"><input class="access-hide" id="id_ground_0" name="ground" value="1" type="checkbox"><span class="circle"></span><span class="circle-check"></span><i class="circle-icon fa fa-check"></i>Paved
+                </label></div></div><div class="col-xs-4"><div class="checkbox checkbox-input"><label for="id_ground_1"><input class="access-hide" id="id_ground_1" name="ground" value="2" type="checkbox"><span class="circle"></span><span class="circle-check"></span><i class="circle-icon fa fa-check"></i>Unpaved
+                </label></div></div><div class="col-xs-4"><div class="checkbox checkbox-input"><label for="id_ground_2"><input class="access-hide" id="id_ground_2" name="ground" value="4" type="checkbox"><span class="circle"></span><span class="circle-check"></span><i class="circle-icon fa fa-check"></i>Gravel
+                </label></div></div></div></div><div class="form-group"><p class="group-label">Category</p><div class="row" id="id_category"><div class="col-xs-4"><div class="checkbox checkbox-input"><label for="id_category_0"><input class="access-hide" id="id_category_0" name="category" value="1" type="checkbox"><span class="circle"></span><span class="circle-check"></span><i class="circle-icon fa fa-check"></i>Road bike
+                </label></div></div><div class="col-xs-4"><div class="checkbox checkbox-input"><label for="id_category_1"><input class="access-hide" id="id_category_1" name="category" value="2" type="checkbox"><span class="circle"></span><span class="circle-check"></span><i class="circle-icon fa fa-check"></i>MTB
+                </label></div></div><div class="col-xs-4"><div class="checkbox checkbox-input"><label for="id_category_2"><input class="access-hide" id="id_category_2" name="category" value="4" type="checkbox"><span class="circle"></span><span class="circle-check"></span><i class="circle-icon fa fa-check"></i>City bike
+                </label></div></div></div></div><div class="form-group"><p class="group-label">Pictures</p><div class="row"><div class="col-xs-12"><div id="dropzone-pictures" class="dropzone needsclick" style="min-height: initial;"></div></div></div></div></form></div></div><div id="scroll-down-hint"><span id="scroll-down-link" class="hint-text"><i class="fa fa-caret-down icon-fade"></i> Scroll down for more</span></div><div class="editor-footer row"><div class="col-xs-12"><button class="button button-solid button-blue button-wide mt-10" id="route_form_submit" data-routeaction="save-route">Save route</button></div></div></div></div></div></section><!-- Help tour content --><div class="hidden"><div id="shepherd-button-text-next">Next</div><div id="shepherd-button-text-back">Back</div><div id="shepherd-button-text-exit">Exit</div><div id="step-intro-text">How'd you like to start?
+        <div class="container intro-container"><div class="row"><div class="col-sm-4 text-center"></div><div class="col-sm-4 text-center">
+                    right
+                </div><div class="col-sm-4 text-center">
+                    right
+                </div></div></div></div><div id="step-draw-title">Drawing tools</div><div id="step-draw-text"><p><i class="help-step-icon mtk-icon-magnet"></i>&nbsp;<b>Magnet tool (default):</b> Draw a line that follows roads and paths. (Technically the engine behind the Bikemap route planner is used.) Use the line tool whenever the magnet tool doesn’t work (offroad, etc.)
+		</p><p><i class="help-step-icon mtk-icon-line"></i>&nbsp;<b>Line tool (click the magnet tool twice):</b> Draw free lines, regardless of roads and paths.
+		</p><p><i class="help-step-icon mtk-icon-remove"></i>&nbsp;<b>Delete points:</b> Select points, then choose “Delete”.
+		</p><p><i class="help-step-icon mtk-icon-back"></i>&nbsp;<b>Return to start point:</b> Join first and last point, either using “Shortest path” (tool from Bikemap route planner) or “Same path back” (returning on the exact same path).
+		</p></div><div id="step-pois-title">Point of interest tools</div><div id="step-pois-text"><p><i class="help-step-icon mtk-icon-marker"></i>&nbsp;<b>Points of interest:</b> Add photos, drinking water access, accomodation or other points of interest to your route.
+		</p><p><i class="help-step-icon mtk-icon-wikipedia"></i>&nbsp;<b>Wikipedia points:</b> Show all known wikipedia articles in the map. Click on article to permanently attach it to your route.
+		</p></div><div id="step-display-options-title">Display options</div><div id="step-display-options-text"><p><b>Relief Map (map type):</b> Change between relief map and many other map types.
+		</p><p><b>Official routes:</b> Display official cycling infrastructure as mapped in Openstreetmap.
+		</p><p><b>Heatmap:</b> Display a heatmap overlay of the popularity among bikemap users.
+		</p></div><div id="step-fullscreen-title">Fullscreen</div><div id="step-fullscreen-text"><p><i class="help-step-fullscreen-icon"></i>&nbsp;<b>Full screen:</b> More space for your editing! Turn it on/off anytime.
+		</p></div><div id="step-gpx-title">Upload GPS File</div><div id="step-gpx-text">
+		Have a GPX or KML file, for example from your GPS device? Upload it here!
+	</div><div id="step-title-image-title">Set title image</div><div id="step-title-image-text">
+		Upload a photo you took as the title image for this tour. The photo will be shown in the sidebar, along with your route. (Optional!)
+	</div><div id="step-delete-title">Power user tipp #1</div><div id="step-delete-text"><img src="/static/bikemap-next/img/help/help-delete-move-marker.gif" alt="Click on a waypoint to delete it, drag it to change its position." /><br/>
+		Click on a waypoint to delete it, drag it to change its position.
+	</div><div id="step-waypoint-title">Power user tipp #2</div><div id="step-waypoint-text"><img src="/static/bikemap-next/img/help/help-add-marker.gif" alt="Grab the blue line anywhere to add a new waypoint, drag it to change its position." /><br/>
+		Grab the blue line anywhere to add a new waypoint, drag it to change its position.
+	</div><div id="step-multiple-lines-title">Power user tipp #3</div><div id="step-multiple-lines-text"><img src="/static/bikemap-next/img/help/help-multipart-route.gif" alt="Right-click the line (or holding the Shift key and left click) to unselect your line. This way you can draw multiple lines that are not connected." /><br/>
+		Right-click the line (or holding the Shift key and left click) to unselect your line. This way you can draw multiple lines that are not connected.
+	</div></div></main><!-- /Main --><div id="dropzone-preview-template-img" style="display: none;"><div class="dz-preview dz-file-preview"><div class="dz-image"><img data-dz-thumbnail></div><div class="dz-details" style="padding: 0;"><a class="dz-remove dz-remove-route-picture" data-dz-remove><i class="fa fa-minus"></i></a></div><div class="dz-progress progress-image" style="display: none;"><span class="dz-upload" data-dz-uploadprogress></span></div></div></div><div id="dropzone-preview-template-gpx" style="display: none;"><div class="dz-preview dz-file-preview"><div class="dz-details" style="padding: 0;"><div class="dz-filename" style=""><i class="fa fa-file-o fa-2x"></i><span data-dz-name></span><a class="dz-remove dz-remove-route-picture" data-dz-remove><i class="fa fa-minus"></i></a></div></div><div class="dz-progress progress-image"><span class="dz-upload" data-dz-uploadprogress></span></div></div></div><!-- /Main Content --><script type="text/javascript" src="/jsi18n/"></script><script type="text/javascript">
+    
+    window.cookieconsent_options = {
+        message: "This website uses cookies to ensure you get the best experience on our website.",
+        dismiss: "Got it",
+        learnMore: "More info",
+        link: "/dataprivacy",
+        theme: false,
+    };
+    
+</script><script type="text/javascript" src="/static/bikemap-next/js/next_base_libraries.v090.js" charset="utf-8"></script><script type="text/javascript">
+                var outdoorish = {
+                    "user_menu" : "/en/user-menu/",
+                    "messages" : "/messages/",
+                    "current_messages": [],
+                    "is_authenticated_url": "/en/user/is_authenticated/check/",
+                    "auto_complete": "/en/search/ac/",
+                    "search": "/en/search/",
+                    "unit": jQuery('html').data('unit'),
+                    "urls": {
+                        "language_switcher": "/i18n/setlang/",
+                        "mark_hint_seen": "/en/user/mark_hint_seen/"
+                    }
+                };
+            </script><script type="text/javascript" src="/static/bikemap-next/js/next_base.v090.js" charset="utf-8"></script><script type="text/javascript">
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-73813362-1', 'auto');
+                </script><script src="https://static-cdn.maptoolkit.net/api/v8.8/mtk.en.js"></script><script type="text/javascript" src="/static/bikemap-next/js/next_route_base.v090.js" charset="utf-8"></script><script src="https://static-cdn.maptoolkit.net/api/v8.8/elevationprofile.js"></script><script src="https://static-cdn.maptoolkit.net/api/v8.8/editor.js"></script><script type="text/javascript" src="/static/bikemap-next/js/next_route_edit.v090.js" charset="utf-8"></script><script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script><script type="text/javascript" src="/static/ckeditor/ckeditor-init.js"></script><script>
+
+        var current_preview_image = '';
+
+        
+
+        var next_url;
+        var route_id;
+        var image_upload_success;
+        var welcome_success = false;
+        var url_params = $.outdoorish.getUrlVars();
+        var unload_oK = true;
+        var exit_button_clicked = false;
+
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+
+            $.outdoorish.selectors.get('#create_route_button').replaceWith('<li class="item-new-route dropdown dropdown-pull-right"><button id="cancel-route-edit" class="button button-ghost button-white button-save-route" ><span class="text">Cancel</span></button></li>');
+
+            if ($.outdoorish.selectors.get('#preview_image').css('background-image') == '' && current_preview_image) {
+                $.outdoorish.selectors.get('#preview_image').css('background-image', 'url(' + current_preview_image + ')');
+            }
+
+            $.outdoorish.selectors.get(window).on('resize', function(){
+                $.outdoorish.selectors.get('.editor-content').height(
+                    $.outdoorish.selectors.get('.editor-pane').height() - $.outdoorish.selectors.get('.editor-header').height() - $.outdoorish.selectors.get('.editor-footer').height()
+                    );
+            }).trigger('resize'); //on page load
+
+            $.outdoorish.selectors.get('.route-title-image-upload').on('click', function() {
+                $.outdoorish.selectors.get('#id_preview_image').click();
+            });
+
+            $.outdoorish.selectors.get('#id_preview_image').on('change', function() {
+                if (this.files && this.files[0] &&
+                        (this.files[0].type === 'image/jpeg' ||
+                         this.files[0].type === 'image/png')) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $.outdoorish.selectors.get('#preview_image').css('background-image', 'url(' + e.target.result + ')');
+                        $.outdoorish.selectors.get('#remove_existing_preview_image').css('display', 'none');
+                        $.outdoorish.selectors.get('#remove_preview_image').css('display', 'block');
+                        $.outdoorish.selectors.get('.route-title-image-empty').css('display', 'none');
+                        $.outdoorish.selectors.get('.route-title-image-icon').css('display', 'inline-block');
+                    };
+                    reader.readAsDataURL(this.files[0]);
+                } else if (this.files && this.files[0]) {
+                    $.notify({
+                        title: '<h5>Upload failed</h5>',
+                        icon: 'icon icon-warning',
+                        message: 'Oh no. The file ' + this.files[0].name + ' is not a supported image format, please select either a JPEG or PNG file.',
+                    },{
+                        type: "danger"
+                    });
+                }
+            });
+
+            $.outdoorish.selectors.get('#remove_preview_image').on('click', function() {
+                $.outdoorish.selectors.get('#id_preview_image').wrap('<form>').closest('form').get(0).reset();
+                $.outdoorish.selectors.get('#id_preview_image').unwrap();
+                $.outdoorish.selectors.get('#preview_image').css('background-image', 'url(' + current_preview_image + ')');
+                $.outdoorish.selectors.get('#remove_preview_image').css('display', 'none');
+                if (current_preview_image !== '') {
+                    $.outdoorish.selectors.get('#remove_existing_preview_image').css('display', 'block');
+                } else {
+                    $.outdoorish.selectors.get('.route-title-image-empty').css('display', 'block');
+                    $.outdoorish.selectors.get('.route-title-image-icon').css('display', 'none');
+                }
+            });
+
+            
+
+            // Disable auto discover for all elements:
+            Dropzone.autoDiscover = false;
+
+            // Dropzones
+
+            var dropzoneGpx = new Dropzone('#dropzone-gpx', {
+                url: "/mtk-gpx-upload",
+                acceptedFiles: ".gpx,.kml",
+                previewTemplate: $.outdoorish.selectors.get('#dropzone-preview-template-gpx').html(),
+                maxFilesize: 10,
+                maxFiles: 1,
+                paramName: 'upload'
+            });
+
+            dropzoneGpx.on('maxfilesexceeded', function(file) {
+                this.removeAllFiles(true);
+                this.addFile(file);
+            });
+
+            dropzoneGpx.on('sending', function(file, xhr, formdata) {
+                $('.progress-image').css('display', '');
+                formdata.append('response', 'json');
+                formdata.append('version', '2');
+                formdata.append('language', 'en');
+                formdata.append('api_key', $.outdoorish.config.mtk_api_key);
+                $.outdoorish.selectors.get('#route_form_submit').prop('disabled', true).addClass("loading-spinner");
+            });
+
+            dropzoneGpx.on('success', function(file, resp) {
+                var response = JSON.parse(resp);
+                if(!response.error) {
+                    try {
+                        // draw the returned route into the route editor
+                        $.outdoorish.editor.setSerializedData(response || {});
+
+                        // calculate the bounds of the route
+                        var coords = [];
+                        for (var i=0; i < response.routeVertices.length; i++) {
+                            coords = coords.concat(response.routeVertices[i]);
+                        }
+                        var bounds = new L.LatLngBounds($.map(coords, function(ll) { return $P(ll) }));
+                        // zoom the map to the bounds of the route
+                        window.app.map.leaflet.fitBounds(bounds);
+
+                    } catch(ex) {
+                        $.notify({
+                            title: '<h5>Upload failed</h5>',
+                            icon: 'icon icon-warning',
+                            message: 'Oh no. Could not load the uploaded file. Please make sure the file is the right type.'
+                        },{
+                            type: "danger"
+                        });
+                    }
+
+                } else {
+                    $.notify({
+                        title: '<h5>Upload failed</h5>',
+                        icon: 'icon icon-warning',
+                        message: 'Oh no. An error occurred while uploading your file. Please make sure the file is the right type.'
+                    },{
+                        type: "danger"
+                    });
+                }
+            });
+
+            dropzoneGpx.on('error', function(file, msg, xhr) {
+                if(xhr !== undefined) {
+                    $.notify({
+                        title: '<h5>Upload failed</h5>',
+                        icon: 'icon icon-warning',
+                        message: 'Oh no. An error occurred while uploading your file. Please make sure the file is the right type.'
+                    },{
+                        type: "danger"
+                    });
+                } else {
+                    this.removeFile(file);
+                    $.notify({
+                        title: '<h5>Upload failed</h5>',
+                        icon: 'icon icon-warning',
+                        message: 'Oh no. An error occurred while uploading your file. Please make sure the file is the right type.'
+                    },{
+                        type: "danger"
+                    });
+                }
+            });
+
+            dropzoneGpx.on('complete', function() {
+                $.outdoorish.selectors.get('#route_form_submit').prop('disabled', false).removeClass("loading-spinner");
+            });
+
+            var dropzoneWelcome = new Dropzone('#dropzone-welcome', {
+                url: "/mtk-gpx-upload",
+                acceptedFiles: ".gpx,.kml",
+                previewTemplate: $.outdoorish.selectors.get('#dropzone-preview-template-gpx').html(),
+                maxFilesize: 10,
+                maxFiles: 1,
+                autoProcessQueue: false,
+                paramName: 'upload'
+            });
+
+            dropzoneWelcome.on('maxfilesexceeded', function(file) {
+                this.removeAllFiles(true);
+                this.addFile(file);
+            });
+
+            dropzoneWelcome.on('sending', function(file, xhr, formdata) {
+                $('.progress-image').css('display', '');
+                formdata.append('response', 'json');
+                formdata.append('version', '2');
+                formdata.append('language', 'en');
+                formdata.append('api_key', $.outdoorish.config.mtk_api_key);
+                $.outdoorish.selectors.get('#welcome_upload_gpx').prop('disabled', true).addClass("loading-spinner");
+            });
+
+            dropzoneWelcome.on('success', function(file, resp) {
+                var response = JSON.parse(resp);
+                if(!response.error) {
+                    try {
+                        // draw the returned route into the route editor
+                        $.outdoorish.editor.setSerializedData(response || {});
+
+                        // calculate the bounds of the route
+                        var coords = [];
+                        for (var i=0; i < response.routeVertices.length; i++) {
+                            coords = coords.concat(response.routeVertices[i]);
+                        }
+                        var bounds = new L.LatLngBounds($.map(coords, function(ll) { return $P(ll) }));
+                        // zoom the map to the bounds of the route
+                        window.app.map.leaflet.fitBounds(bounds);
+
+                        welcome_success = true;
+
+                    } catch(ex) {
+                        $.notify({
+                            title: '<h5>Upload failed</h5>',
+                            icon: 'icon icon-warning',
+                            message: 'Oh no. Could not load the uploaded file. Please make sure the file is the right type.'
+                        },{
+                            type: "danger"
+                        });
+                    }
+
+                } else {
+                    $.notify({
+                        title: '<h5>Upload failed</h5>',
+                        icon: 'icon icon-warning',
+                        message: 'Oh no. An error occurred while uploading your file. Please make sure the file is the right type.'
+                    },{
+                        type: "danger"
+                    });
+                }
+            });
+
+            dropzoneWelcome.on('error', function(file, msg, xhr) {
+                if(xhr !== undefined) {
+                    $.notify({
+                        title: '<h5>Upload failed</h5>',
+                        icon: 'icon icon-warning',
+                        message: 'Oh no. An error occurred while uploading your file. Please make sure the file is the right type.'
+                    },{
+                        type: "danger"
+                    });
+                } else {
+                    this.removeFile(file);
+                    $.notify({
+                        title: '<h5>Upload failed</h5>',
+                        icon: 'icon icon-warning',
+                        message: 'Oh no. An error occurred while uploading your file. Please make sure the file is the right type.'
+                    },{
+                        type: "danger"
+                    });
+                }
+            });
+
+            dropzoneWelcome.on('complete', function() {
+                if (welcome_success === true) {
+                    $('#welcome').modal('hide');
+                } else {
+                    $.outdoorish.selectors.get('#welcome_upload_gpx').prop('disabled', false).removeClass("loading-spinner");
+                }
+            });
+
+            $.outdoorish.selectors.get('#welcome_upload_gpx').on('click', function() {
+                if (dropzoneWelcome.getQueuedFiles().length == 0) {
+                    $.outdoorish.selectors.get('#dropzone-welcome').trigger('click');
+                } else {
+                    dropzoneWelcome.processQueue();
+                }
+            });
+
+            $.outdoorish.selectors.remove('#dropzone-preview-template-gpx');
+
+            var dropzonePictures = new Dropzone('#dropzone-pictures', {
+                url: "/en/route/upload_image/",
+                acceptedFiles: ".png,.jpg,.jpeg",
+                previewTemplate: $('#dropzone-preview-template-img').html(),
+                autoProcessQueue: false,
+                parallelUploads: 5,
+                thumbnailHeight: 80,
+                thumbnailWidth: 80,
+                maxFilesize: 3,
+                filesizeBase: 1000,
+                paramName: 'image',
+                maxFiles: 50,
+                dictMaxFilesExceeded: "Maximum number of images reached, please delete an image before uploading another.",
+                dictInvalidFileType: "Please upload JPG and PNG files only.",
+                thumbnail: function(file, dataUrl) {
+                    if (file.previewElement) {
+                    file.previewElement.classList.remove("dz-file-preview");
+                    var images = file.previewElement.querySelectorAll("[data-dz-thumbnail]");
+                    for (var i = 0; i < images.length; i++) {
+                        var thumbnailElement = images[i];
+                        thumbnailElement.alt = file.name;
+                        thumbnailElement.src = dataUrl;
+                    }
+                    setTimeout(function() { file.previewElement.classList.add("dz-image-preview"); }, 1);
+                    }
+                }
+            }).on('sending', function(file, xhr, formdata) {
+                $('.progress-image').css('display', '');
+                if(this.getQueuedFiles().length === 0) {
+                    formdata.append('add_message', '1')
+                }
+                formdata.append('route', route_id);
+                formdata.append('csrfmiddlewaretoken', $.outdoorish.readCookie('csrftoken'));
+                $.outdoorish.selectors.get('#route_form_submit').prop('disabled', true).addClass("loading-spinner");
+            }).on('error', function(file, msg, xhr) {
+                if(xhr !== undefined) {
+                    image_upload_success = false;
+                    $.notify({
+                        title: '<h5>Upload failed</h5>',
+                        icon: 'icon icon-warning',
+                        message: 'Oh no. An error occurred while uploading ' + file.name + ', the server responded with: ' + xhr.statusText
+                    },{
+                        type: "danger"
+                    });
+                } else {
+                    this.removeFile(file);
+                    $.notify({
+                        title: '<h5>Upload Failed</h5>',
+                        icon: 'icon icon-warning',
+                        message: msg
+                    },{
+                        type: "danger"
+                    });
+                }
+            }).on('success', function(file, resp) {
+                var response = resp;
+                if(response.status === 'error') {
+                    image_upload_success = false;
+                    $.notify({
+                        title: '<h5>Upload Failed</h5>',
+                        icon: 'icon icon-warning',
+                        message: 'Oh no. An error occurred while uploading ' + file.name + ', the server responded with: ' + response.msg
+                    },{
+                        type: "danger"
+                    });
+                }
+            }).on('queuecomplete', function() {
+                // Dropzone fires the queuecomplete event also when the only image has been rejected
+                // i.e. also before actually saving the route, with autoProcessQueue disabled
+                if (dropzonePictures.getFilesWithStatus(Dropzone.SUCCESS).length > 0) {
+                    reset_form();
+                    if (image_upload_success === true) {
+                        location.href = next_url;
+                    } else {
+                        location.href = '/route/' + route_id + '/edit/'
+                    }
+                }
+            });
+
+            
+
+            $.outdoorish.selectors.get('.remove-saved-picture').on('click', function() {
+                $.ajax({
+                    'url': "/en/route/delete_image/",
+                    'type': 'post',
+                    'data': {'image_id': $(this).parents('.dz-image-preview').find('img').attr('id')},
+                    'headers': {'X-CSRFToken': $.outdoorish.readCookie('csrftoken')},
+                    'success': function (data) {
+                        $('img[id="' + data.image_id + '"]').parents('.dz-image-preview').remove();
+                        var pictureDropzone = $.outdoorish.selectors.get('#dropzone-pictures');
+                        if (pictureDropzone.children('.dz-image-preview').length == 0) {
+                            pictureDropzone.children('.dz-message').css('display', '');
+                        }
+                    },
+                    'error': function(jqxhr) {
+                        // cover_delete_msg.title = '<h5>Error: ' + jqxhr.statusText + '</h5>';
+                        // cover_delete_msg.content = 'There was an unexpected error. We are sorry! Please try again!'
+                    },
+                    'complete': function() {
+                        //initDZRemoveButtons();
+                        /*$.notify({
+                            title: cover_delete_msg.title,
+                            icon: cover_delete_msg.icon,
+                            message: cover_delete_msg.content
+                        },{
+                            type: cover_delete_msg.type
+                        });*/
+                    }
+                });
+            });
+
+            $.outdoorish.selectors.get('#sign-up').on('show.bs.modal', function(event) {
+                var button = $(event.relatedTarget);
+                var action = button.data('routeaction');
+                var modal = $(this);
+
+                if (action === 'save-route') {
+                    modal.find('.modal-title').text('To save a route, please log in or sign up first.');
+                } else {
+                    modal.find('.modal-title').text("Sign up for Bikemap");
+                }
+
+                saveFormToSessionStorage($.outdoorish.selectors.get('#routeEditForm')[0]);
+            });
+
+            $.outdoorish.selectors.get('#log-in').on('show.bs.modal', function(event) {
+                saveFormToSessionStorage($.outdoorish.selectors.get('#routeEditForm')[0]);
+            });
+
+            $.outdoorish.selectors.get('form#register button[type="submit"],' +
+                                       'form#login button[type="submit"],' +
+                                       '#register-with-google,' +
+                                       '#register-with-facebook,' +
+                                       '#login-with-google,' +
+                                       '#login-with-facebook').on('click', function(event) {
+                reset_form();
+            });
+
+            function reset_form() {
+                $.outdoorish.selectors.get('#id_distance').val('');
+                $.outdoorish.selectors.get('#id_parts').val('');
+                $.outdoorish.selectors.get('#id_points').val('');
+                $.outdoorish.selectors.get('#id_points_changed').val('');
+                $.outdoorish.selectors.get('#id_pois').val('');
+                $.outdoorish.selectors.get('#id_creator').val('');
+                $.outdoorish.selectors.get('#id_copied_from').val('');
+                $.outdoorish.selectors.get('#id_preview_image').val('');
+                $.outdoorish.selectors.get('#routeEditForm')[0].reset();
+                for (var instance in CKEDITOR.instances ) {
+                    CKEDITOR.instances[instance].setData('');
+                }
+                dropzonePictures.removeAllFiles();
+                unload_oK = true;
+            }
+
+            // http://stackoverflow.com/questions/4998908/convert-data-uri-to-file-then-append-to-formdata
+            function dataURItoBlob(dataURI) {
+                var uri = dataURI.split(',');
+                var type = uri[0], data = uri[1];
+                var mimeType = type.split(':')[1].split(';')[0];
+                var byteString;
+
+                if (type.indexOf('base64') !== -1) {
+                    byteString = atob(data);
+                } else {
+                    byteString = decodeURI(data);
+                }
+
+                var content = [];
+                for (var i = 0; i < byteString.length; i++) {
+                    content[i] = byteString.charCodeAt(i);
+                }
+
+                return new Blob([new Uint8Array(content)], {type: mimeType});
+            }
+
+            // do we come from routeplanner ?
+            // FIXME: check referer?
+            var routeplannerRoute = sessionStorage.getItem("routeplanner-route");
+            if (routeplannerRoute) {
+                $.outdoorish.selectors.get("#id_parts").val(routeplannerRoute);
+                sessionStorage.removeItem("routeplanner-route");
+            } else if (sessionStorage.length > 0) {
+                for (var i = 0; i < sessionStorage.length; i++) {
+                    var key = sessionStorage.key(i);
+
+                    if (key == 'preview_image') {
+                        $.outdoorish.selectors.get('#preview_image').css('background-image', 'url(' + sessionStorage.getItem(key) + ')');
+                        $.outdoorish.selectors.get('#remove_existing_preview_image').css('display', 'none');
+                        $.outdoorish.selectors.get('#remove_preview_image').css('display', 'block');
+                        $.outdoorish.selectors.get('.route-title-image-empty').css('display', 'none');
+                        $.outdoorish.selectors.get('.route-title-image-icon').css('display', 'inline-block');
+                    } else if (key == 'description') {
+                        CKEDITOR.instances['id_description'].setData(sessionStorage.getItem(key));
+                    } else if (key.indexOf('ground') === 0 || key.indexOf('category') === 0) {
+                        var type = key.split('_');
+                        $('input[name="' + type[0] + '"][value="' + type[1] + '"]').prop('checked', true);
+                    } else if (key.indexOf('picture') === 0 && key.lastIndexOf('name') !== key.length - 4) {
+                        var file = dataURItoBlob(sessionStorage.getItem(key));
+                        file.name = sessionStorage.getItem(key + '_name');
+                        dropzonePictures.addFile(file);
+                    } else {
+                        $('#id_' + key).val(sessionStorage.getItem(key));
+                    }
+                }
+
+                sessionStorage.clear();
+            }
+
+            function saveFormToSessionStorage(form) {
+                var distance = $('#id_distance', form).val();
+                if (distance) {
+                    sessionStorage.setItem('distance', distance);
+                }
+
+                var parts = $('#id_parts', form).val();
+                if (parts) {
+                    sessionStorage.setItem('parts', parts);
+                }
+
+                var pois = $('#id_pois', form).val();
+                if (pois) {
+                    sessionStorage.setItem('pois', pois);
+                }
+
+                var points_changed = $('#id_points_changed', form).val();
+                if (points_changed) {
+                    sessionStorage.setItem('points_changed', points_changed);
+                }
+
+                var creator = $('#id_creator', form).val();
+                if (creator) {
+                    sessionStorage.setItem('creator', creator);
+                }
+
+                var copied_from = $('#id_copied_from', form).val();
+                if (copied_from) {
+                    sessionStorage.setItem('copied_from', copied_from);
+                }
+
+                var preview_image = $('#preview_image', form).css('background-image');
+                var dataURIIndex = preview_image.indexOf('data:');
+                if (dataURIIndex !== -1) {
+                    var dataURI;
+
+                    if (preview_image.indexOf('"data:') !== -1) {
+                        dataURI = preview_image.substring(dataURIIndex, preview_image.length - 2);
+                    } else {
+                        dataURI = preview_image.substring(dataURIIndex, preview_image.length - 1);
+                    }
+
+                    sessionStorage.setItem('preview_image', dataURI);
+                }
+
+                var title = $('#id_title', form).val();
+                if (title) {
+                    sessionStorage.setItem('title', title);
+                }
+
+                var description = CKEDITOR.instances['id_description'].getData();
+                if (description) {
+                    sessionStorage.setItem('description', description);
+                }
+
+                var checked = $('input[name="ground"]:checked, input[name="category"]:checked', form);
+                if (checked.length > 0) {
+                    $.each(checked, function(idx, item) {
+                        sessionStorage.setItem(item.name + '_' + item.value, true);
+                    });
+                }
+
+                if (dropzonePictures.files.length > 0) {
+                    var index = 0;
+
+                    readNextPicture();
+
+                    function readNextPicture() {
+                        var pictureReader = new FileReader();
+                        pictureReader.onload = function (event) {
+                            sessionStorage.setItem('picture_' + index, event.target.result);
+                            index += 1;
+                            if (index < dropzonePictures.files.length) {
+                                readNextPicture();
+                            }
+                        };
+                        pictureReader.readAsDataURL(dropzonePictures.files[index]);
+                        sessionStorage.setItem('picture_' + index + '_name', dropzonePictures.files[index].name);
+                    }
+                }
+            }
+
+            function create_route() {
+                // ask user to login to be able to create a route
+                if ($.outdoorish.is_authenticated) {
+                    var form = $.outdoorish.selectors.get('#routeEditForm');
+                    var preview_image = $('#id_preview_image')[0].files;
+
+                    var formData = new FormData(form[0]);
+
+                    if (preview_image.length == 0) {
+                        preview_image = $.outdoorish.selectors.get('#preview_image').css('background-image');
+                        var dataURIIndex = preview_image.indexOf('data:');
+
+                        if (dataURIIndex !== -1) {
+                            var dataURI;
+
+                            if (preview_image.indexOf('"data:') !== -1) {
+                                dataURI = preview_image.substring(dataURIIndex, preview_image.length - 2);
+                            } else {
+                                dataURI = preview_image.substring(dataURIIndex, preview_image.length - 1);
+                            }
+
+                            var blob = dataURItoBlob(dataURI);
+                            formData.append('preview_image', blob);
+                        }
+                    }
+
+                    $.ajax({
+                        form: form,
+                        busy_element: $('#route_form_submit'),
+                        busy_class: 'loading-spinner',
+                        callback_function: route_created,
+                        method: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        headers: {'X-CSRFToken': $.outdoorish.readCookie('csrftoken')},
+                        complete: $.outdoorish.forms.handleAjaxFormErrors
+                    });
+                } else {
+                    $.outdoorish.selectors.get('#route_form_submit').prop('disabled', false).removeClass("loading-spinner");
+                    $.outdoorish.selectors.get('#sign-up').modal('show', $('#route_form_submit'));
+                }
+            }
+
+            function route_created(params, url) {
+                image_upload_success = true;
+                next_url = url;
+                route_id = params.route_id;
+                ga('send','event', 'Route', 'Created');
+                if (dropzonePictures.getQueuedFiles().length > 0) {
+                    if (params.edited) {
+                        $.notify({
+                            title: '<h5>Route updated</h5>',
+                            icon: 'icon icon-check',
+                            message: 'Great! Your route has been updated. We need another few seconds to process your images ...'
+                        }, {
+                            type: 'info'
+                        });
+                    } else {
+                        $.notify({
+                            title: '<h5>Route created</h5>',
+                            icon: 'icon icon-check',
+                            message: 'Excellent! Your route has been created. We need another few seconds to process your images ...'
+                        }, {
+                            type: 'info'
+                        });
+                    }
+                    dropzonePictures.processQueue()
+                } else {
+                    reset_form();
+                    location.href = next_url
+                }
+            }
+
+            $.outdoorish.selectors.get('#routeEditForm').submit(function() {
+                $.outdoorish.selectors.get('#route_form_submit').prop('disabled', true).addClass("loading-spinner");
+
+                // Get Poi data before submitting form to server
+                if($.outdoorish.routes.poiEditor) {
+                    $.outdoorish.selectors.get("#id_pois").val($.toJSON($.outdoorish.routes.poiEditor.ids));
+                } else if($.outdoorish.editor) {
+                    var serializedData = $.outdoorish.editor.getSerializedData();
+                    $.outdoorish.selectors.get("#id_pois").val($.toJSON(serializedData['poi']['ids']));
+                    $.outdoorish.selectors.get("#id_parts").val($.toJSON(serializedData));
+                }
+
+                // prepare ckeditor fields
+                for (var instance in CKEDITOR.instances ) {
+                    CKEDITOR.instances[instance].updateElement();
+                }
+
+                create_route();
+
+                return false;
+            });
+
+            $.outdoorish.selectors.get('#route_form_submit').on('click', function() {
+                $.outdoorish.selectors.get('#routeEditForm').submit();
+            });
+
+            // Add shepherd tour to guide the user through the new editor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* TODO: they're relicts from the legacy JS, find out if we still need those */
+            var editOk = false;
+            var firstCall = true;
+
+
+            var translations = {
+                'connectToStart': 'Do you want to connect the last point with the start?',
+                'sameWayBack': 'Take same way back',
+                'shortestPath': 'Use shortest path',
+                'drawRouteVertices': 'Draw route freehand (Click to follow roads)',
+                'drawRouteWaypoints': 'Draw route along roads (Click to draw freehand)',
+                'returnToStart': 'Return to start point',
+                'deletePoints': 'Select points to delete',
+                'addPOI': 'Add point of interest',
+                'addPOIWikipedia': 'Add points of interest from Wikipedia',
+                'addPOIWikipediaDisabled': 'Zoom in to activate this feature',
+                'openHelp': 'Open help overlay',
+                'wikipediaAdd': 'Attach to route',
+                'wikipediaRemove': 'Remove from route',
+                'commitDelete': 'Delete ${number} points',
+                'cancel': 'Cancel',
+                'delete': 'Delete',
+                'zoomInHintZoomIn': 'Zoom in',
+                'zoomInHintToDraw': ' to continue drawing you route.',
+                'zoomInHintOrGeocode': ' or select a different location to create a route.',
+                'zoomInToUseTool': 'Zoom in to use this function',
+                'maximumDrawDistanceExceeded': 'This point is too far away. Please set it located in closer proximity to the last one.',
+                'noRouteFound': 'Sorry, there is no route available leading to this point.'
+            };
+
+
+            // initialize map for editing new route
+            $.outdoorish.routes.initEditMap({
+                'startLocation': {"location": [53.333099365234375, -6.248899936676025], "zoom": 14},
+                'editorMessages': translations
+            });
+
+            if (url_params.startwithgpx !== undefined) {
+                $('#welcome').modal({
+                    backdrop: true
+                }).modal('show');
+            }
+
+            $.outdoorish.selectors.get('#routeEditForm').find('input').on('change', function() {
+                unload_oK = false;
+            });
+
+            $('#cancel-route-edit').on('click', function() {
+                unload_oK = true;
+                exit_button_clicked = true;
+                sessionStorage.clear();
+                window.history.back();
+            });
+
+            $.outdoorish.selectors.get(window).on('beforeunload', function(){
+                // check if textarea has changed
+                for (var instance in CKEDITOR.instances ) {
+                    CKEDITOR.instances[instance].updateElement();
+                }
+
+                if ($.outdoorish.selectors.get('#id_description').val()) {
+                    unload_oK = false;
+                }
+
+                // check if map has changed
+                if ($.outdoorish.selectors.get('#id_distance').val()) {
+                    unload_oK = false;
+                }
+
+                if (dropzonePictures.getQueuedFiles().length > 0) {
+                    unload_oK = false;
+                }
+
+                if (exit_button_clicked) {
+                    unload_oK = false;
+                }
+
+                // only if nothing has changes exist without asking
+                if (!unload_oK) {
+                    return 'Are you sure you want to leave the route editor? Unsaved changes to your route will be lost.';
+                }
+            });
+
+
+
+
+
+
+
+            $('#scroll-down-hint').addClass("animated");
+
+            $("#scroll-down-link").click(function() {
+                $('.editor-content').animate({
+                    scrollTop: $('.editor-content').prop("scrollHeight")
+                }, 1000);
+            });
+
+            $('.editor-content').scroll( function() {
+                
+                // sets style for scroll positioning
+                if($('.editor-content').scrollTop() > 0) {
+                  $('#scroll-down-hint').removeClass("fadeInUp");
+                  $('#scroll-down-hint').addClass("fadeOutDown");
+                } else {
+                  $('#scroll-down-hint').removeClass("fadeOutDown");
+                  $('#scroll-down-hint').addClass("fadeInUp");
+                }
+            });
+
+
+        });
+
+    </script><link rel="stylesheet" type="text/css" href="https://static-cdn.maptoolkit.net/api/v8.8/mtk.css" /><link rel="stylesheet" type="text/css" href="https://static-cdn.maptoolkit.net/api/v8.8/elevationprofile.css" /><link rel="stylesheet" type="text/css" href="https://static-cdn.maptoolkit.net/api/v8.8/editor.css" /><style>
+    .django-ckeditor-widget {
+        width: 100%;
+    }
+    </style><link href="/static/bikemap-next/css/bikemap-mtk.v090.css" rel="stylesheet" type="text/css" /><!-- Font Awesome --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" /><a href="#0" class="cd-top">Top</a></body></html>
